@@ -9,7 +9,20 @@ import SwiftUI
 
 struct LeadsView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+#if os(iOS)
+        ScrollView{
+            HStack {
+                VStack {
+                    Text("Featured").font(.headline).fontWeight(.bold).frame(maxWidth: .infinity,alignment:.leading).foregroundColor(.gray)
+                    Text("Leads").font(.title).fontWeight(.bold).frame(maxWidth: .infinity,alignment:.leading)
+                }.frame(maxWidth: .infinity,alignment: .leading)
+            }.padding()
+        }
+#endif
+        
+#if os(macOS)
+        
+#endif
     }
 }
 

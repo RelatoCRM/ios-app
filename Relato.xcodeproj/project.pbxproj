@@ -12,6 +12,23 @@
 		320CD3C92CC1652B00675D80 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CD3C82CC1652B00675D80 /* Item.swift */; };
 		320CD3CB2CC1652C00675D80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320CD3CA2CC1652C00675D80 /* Assets.xcassets */; };
 		320CD3CF2CC1652C00675D80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320CD3CE2CC1652C00675D80 /* Preview Assets.xcassets */; };
+		325FEBE02CC6BCF80003EBF7 /* ReviewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBDF2CC6BCF80003EBF7 /* ReviewsView.swift */; };
+		325FEBE22CC6BD2E0003EBF7 /* ManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBE12CC6BD2E0003EBF7 /* ManagementView.swift */; };
+		325FEBE42CC6BD4B0003EBF7 /* InsightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBE32CC6BD4B0003EBF7 /* InsightsView.swift */; };
+		325FEBE62CC6BFFC0003EBF7 /* LeadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBE52CC6BFFC0003EBF7 /* LeadsView.swift */; };
+		325FEBE82CC6C0750003EBF7 /* CommunicationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBE72CC6C0750003EBF7 /* CommunicationsView.swift */; };
+		325FEBEA2CC6C2BC0003EBF7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBE92CC6C2BC0003EBF7 /* HomeView.swift */; };
+		325FEBEC2CC6C88D0003EBF7 /* LatestReviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBEB2CC6C88D0003EBF7 /* LatestReviews.swift */; };
+		325FEBEF2CC713D00003EBF7 /* Communication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBEE2CC713D00003EBF7 /* Communication.swift */; };
+		325FEBF12CC780840003EBF7 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBF02CC780840003EBF7 /* Category.swift */; };
+		325FEBF42CC8D7370003EBF7 /* Marquee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBF32CC8D7370003EBF7 /* Marquee.swift */; };
+		325FEBF62CC8DAD00003EBF7 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBF52CC8DAD00003EBF7 /* ChartView.swift */; };
+		325FEBF82CC8E0120003EBF7 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBF72CC8E0120003EBF7 /* Avatar.swift */; };
+		325FEBFA2CC8E3880003EBF7 /* ConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBF92CC8E3880003EBF7 /* ConfigurationView.swift */; };
+		325FEBFC2CC8ED0A0003EBF7 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBFB2CC8ED0A0003EBF7 /* Review.swift */; };
+		325FEBFE2CC90BEE0003EBF7 /* DateRangePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBFD2CC90BEE0003EBF7 /* DateRangePicker.swift */; };
+		325FEC002CC93B050003EBF7 /* SalesWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBFF2CC93B050003EBF7 /* SalesWidget.swift */; };
+		325FEC022CC93B240003EBF7 /* ConversionRateWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEC012CC93B240003EBF7 /* ConversionRateWidget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +39,23 @@
 		320CD3CA2CC1652C00675D80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		320CD3CC2CC1652C00675D80 /* Relato.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Relato.entitlements; sourceTree = "<group>"; };
 		320CD3CE2CC1652C00675D80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		325FEBDF2CC6BCF80003EBF7 /* ReviewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsView.swift; sourceTree = "<group>"; };
+		325FEBE12CC6BD2E0003EBF7 /* ManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagementView.swift; sourceTree = "<group>"; };
+		325FEBE32CC6BD4B0003EBF7 /* InsightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsView.swift; sourceTree = "<group>"; };
+		325FEBE52CC6BFFC0003EBF7 /* LeadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadsView.swift; sourceTree = "<group>"; };
+		325FEBE72CC6C0750003EBF7 /* CommunicationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationsView.swift; sourceTree = "<group>"; };
+		325FEBE92CC6C2BC0003EBF7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		325FEBEB2CC6C88D0003EBF7 /* LatestReviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestReviews.swift; sourceTree = "<group>"; };
+		325FEBEE2CC713D00003EBF7 /* Communication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Communication.swift; sourceTree = "<group>"; };
+		325FEBF02CC780840003EBF7 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		325FEBF32CC8D7370003EBF7 /* Marquee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marquee.swift; sourceTree = "<group>"; };
+		325FEBF52CC8DAD00003EBF7 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		325FEBF72CC8E0120003EBF7 /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
+		325FEBF92CC8E3880003EBF7 /* ConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationView.swift; sourceTree = "<group>"; };
+		325FEBFB2CC8ED0A0003EBF7 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		325FEBFD2CC90BEE0003EBF7 /* DateRangePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRangePicker.swift; sourceTree = "<group>"; };
+		325FEBFF2CC93B050003EBF7 /* SalesWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesWidget.swift; sourceTree = "<group>"; };
+		325FEC012CC93B240003EBF7 /* ConversionRateWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionRateWidget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +88,18 @@
 		320CD3C32CC1652B00675D80 /* Relato */ = {
 			isa = PBXGroup;
 			children = (
+				325FEBF22CC8D71B0003EBF7 /* Components */,
+				325FEBED2CC713AA0003EBF7 /* Models */,
 				320CD3C42CC1652B00675D80 /* RelatoApp.swift */,
+				325FEBE92CC6C2BC0003EBF7 /* HomeView.swift */,
 				320CD3C62CC1652B00675D80 /* ContentView.swift */,
+				325FEBF92CC8E3880003EBF7 /* ConfigurationView.swift */,
+				325FEBF52CC8DAD00003EBF7 /* ChartView.swift */,
+				325FEBE72CC6C0750003EBF7 /* CommunicationsView.swift */,
+				325FEBE52CC6BFFC0003EBF7 /* LeadsView.swift */,
+				325FEBE32CC6BD4B0003EBF7 /* InsightsView.swift */,
+				325FEBDF2CC6BCF80003EBF7 /* ReviewsView.swift */,
+				325FEBE12CC6BD2E0003EBF7 /* ManagementView.swift */,
 				320CD3C82CC1652B00675D80 /* Item.swift */,
 				320CD3CA2CC1652C00675D80 /* Assets.xcassets */,
 				320CD3CC2CC1652C00675D80 /* Relato.entitlements */,
@@ -70,6 +114,29 @@
 				320CD3CE2CC1652C00675D80 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		325FEBED2CC713AA0003EBF7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				325FEBEE2CC713D00003EBF7 /* Communication.swift */,
+				325FEBF02CC780840003EBF7 /* Category.swift */,
+				325FEBFB2CC8ED0A0003EBF7 /* Review.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		325FEBF22CC8D71B0003EBF7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				325FEBEB2CC6C88D0003EBF7 /* LatestReviews.swift */,
+				325FEBF32CC8D7370003EBF7 /* Marquee.swift */,
+				325FEBF72CC8E0120003EBF7 /* Avatar.swift */,
+				325FEBFD2CC90BEE0003EBF7 /* DateRangePicker.swift */,
+				325FEBFF2CC93B050003EBF7 /* SalesWidget.swift */,
+				325FEC012CC93B240003EBF7 /* ConversionRateWidget.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +209,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				325FEBEA2CC6C2BC0003EBF7 /* HomeView.swift in Sources */,
+				325FEBF42CC8D7370003EBF7 /* Marquee.swift in Sources */,
+				325FEBE02CC6BCF80003EBF7 /* ReviewsView.swift in Sources */,
+				325FEBF62CC8DAD00003EBF7 /* ChartView.swift in Sources */,
+				325FEBE22CC6BD2E0003EBF7 /* ManagementView.swift in Sources */,
+				325FEBFE2CC90BEE0003EBF7 /* DateRangePicker.swift in Sources */,
+				325FEBFA2CC8E3880003EBF7 /* ConfigurationView.swift in Sources */,
+				325FEBE62CC6BFFC0003EBF7 /* LeadsView.swift in Sources */,
 				320CD3C72CC1652B00675D80 /* ContentView.swift in Sources */,
+				325FEBE42CC6BD4B0003EBF7 /* InsightsView.swift in Sources */,
 				320CD3C92CC1652B00675D80 /* Item.swift in Sources */,
 				320CD3C52CC1652B00675D80 /* RelatoApp.swift in Sources */,
+				325FEC002CC93B050003EBF7 /* SalesWidget.swift in Sources */,
+				325FEBEF2CC713D00003EBF7 /* Communication.swift in Sources */,
+				325FEBE82CC6C0750003EBF7 /* CommunicationsView.swift in Sources */,
+				325FEBFC2CC8ED0A0003EBF7 /* Review.swift in Sources */,
+				325FEBEC2CC6C88D0003EBF7 /* LatestReviews.swift in Sources */,
+				325FEBF82CC8E0120003EBF7 /* Avatar.swift in Sources */,
+				325FEBF12CC780840003EBF7 /* Category.swift in Sources */,
+				325FEC022CC93B240003EBF7 /* ConversionRateWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

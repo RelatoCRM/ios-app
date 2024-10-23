@@ -1,18 +1,15 @@
-//
-//  AvatarView.swift
-//  Relato
-//
-//  Created by Diego Herrera Redondo on 23/10/24.
-//
-
 import SwiftUI
 
 struct AvatarView: View {
+    var imageName: String
+    var borderColor: Color = .blue
+    var size: CGFloat = 100
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image(imageName)
+            .resizable()
+            .scaledToFill()
+            .frame(width: size, height: size)
+            .clipShape(Circle()) // Make the image circular
     }
-}
-
-#Preview {
-    AvatarView()
 }

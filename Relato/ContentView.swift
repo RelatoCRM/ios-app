@@ -13,52 +13,35 @@ struct ContentView: View {
     @Query private var items: [Item]
 
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
-                }
-                .onDelete(perform: deleteItems)
+        TabView {
+            HomeView()
+                .tabItem {
+                    Image(systemName: "house")
+                    Text("Home")
             }
-#if os(macOS)
-            .navigationSplitViewColumnWidth(min: 180, ideal: 200)
-#endif
-            .toolbar {
-#if os(iOS)
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-#endif
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
+            ReviewsView()
+                .tabItem {
+                    Image(systemName: "star")
+                    Text("Reviews")
             }
-        } detail: {
-            Text("Select an item")
-        }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
+            ManagementView()
+                .tabItem {
+                    Image(systemName: "mail.and.text.magnifyingglass")
+                    Text("Management")
             }
-        }
+            CommunicationsView()
+                .tabItem {
+                    Image(systemName: "tray.and.arrow.up.fill")
+                    Text("Mailbox")
+                }
+            ConfigurationView()
+                .tabItem {
+                    Image(systemName: "gear")
+                    Text("Configuration")
+                }
+        }.accentColor(Color("AccentColor"))
     }
-}
+    }
 
 #Preview {
     ContentView()

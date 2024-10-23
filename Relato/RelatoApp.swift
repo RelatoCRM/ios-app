@@ -1,23 +1,12 @@
-//
-//  RelatoApp.swift
-//  Relato
-//
-//  Created by Diego Herrera Redondo on 17/10/24.
-//
-
 import SwiftUI
 import SwiftData
 
 @main
 struct RelatoApp: App {
     var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
         do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
+            // Crea el contenedor con tus modelos persistentes
+            return try ModelContainer(for: Communication.self, Category.self, Review.self)
         } catch {
             fatalError("Could not create ModelContainer: \(error)")
         }
@@ -26,7 +15,7 @@ struct RelatoApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .modelContainer(sharedModelContainer) // Asigna el contenedor al contexto de la vista
         }
-        .modelContainer(sharedModelContainer)
     }
 }

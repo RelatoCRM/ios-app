@@ -7,12 +7,34 @@
 
 import SwiftUI
 
-struct DateRangePicker: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+struct DateRangePickerView: View {
+    @Binding var fromDate: Date
+    @Binding var toDate: Date
 
-#Preview {
-    DateRangePicker()
+    var body: some View {
+        VStack {
+            // From Date Picker
+            DatePicker("From Date", selection: $fromDate, displayedComponents: .date)
+                .datePickerStyle(GraphicalDatePickerStyle())
+                .padding().tint(Color("AccentColor"))
+
+            // To Date Picker (limited to after fromDate)
+            DatePicker("To Date", selection: $toDate, in: fromDate..., displayedComponents: .date)
+                .datePickerStyle(GraphicalDatePickerStyle())
+                .padding().tint(Color("AccentColor"))
+
+            // Button to close the date picker
+            Button(action: {
+                // You can dismiss the view using a custom logic here or bind to a parent view
+            }) {
+                Text("Done")
+                    .padding()
+                    .background(Color("AccentColor"))
+                    .foregroundColor(.white)
+                    .cornerRadius(8)
+                    .tint(Color("AccentColor"))
+            }
+        }
+        .padding()
+    }
 }

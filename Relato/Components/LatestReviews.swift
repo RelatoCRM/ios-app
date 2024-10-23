@@ -7,9 +7,11 @@
 
 import SwiftUI
 
-struct InfoCard: View {
+import SwiftUI
+
+struct LatestReviews: View {
     @State var reviews: [Review] = [
-        Review(reviewer: "Diego Herrera", title: "Awful ask", reviewBody: "The whole thing was givin' nothing and it was so undone", starsGiven: 2),
+        Review(reviewer: "Diego Herrera", title: "Awful experience", reviewBody: "The whole thing was givin' nothing and it was so undone", starsGiven: 2),
         Review(reviewer: "Jane Doe", title: "Great experience", reviewBody: "I loved everything about it!", starsGiven: 5)
     ]
     
@@ -21,7 +23,7 @@ struct InfoCard: View {
                         .font(.title3)
                         .fontWeight(.bold)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                    Image(systemName: "arrow.right")
+                    Image(systemName: "arrow.right").foregroundStyle(Color("AccentColor"))
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding([.top, .leading, .trailing])
@@ -33,37 +35,38 @@ struct InfoCard: View {
                     ForEach(reviews) { review in
                         GridRow {
                             HStack {
-                                Image(systemName: "person.circle")
+                                Image(systemName: "quote.bubble.fill")
                                     .resizable()
-                                    .frame(width: 30, height: 30)
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(height: 30) // Match the row height
+                                    .padding(.horizontal, 15)
+                                
+                                VStack(alignment: .leading) {
+                                    Text(review.reviewer)
+                                        .font(.headline)
+                                    Text(review.title)
+                                        .font(.subheadline)
+                                        .foregroundColor(.gray)
+                                }
+                                .frame(maxWidth: .infinity, alignment: .leading) // Take more space for name and title
                             }
-                            .frame(maxWidth: 50)
-                            .padding(.leading)
                             
-                            VStack(alignment: .leading) {
-                                Text(review.reviewer)
-                                    .font(.headline)
-                                Text(review.title)
-                                    .font(.subheadline)
-                                    .foregroundColor(.gray)
-                            }
-                            
-                            HStack {
+                            HStack(spacing: 2) { // Reduced spacing between stars
                                 ForEach(0..<review.starsGiven, id: \.self) { _ in
                                     Image(systemName: "star.fill")
                                         .foregroundColor(.yellow)
+                                        .frame(width: 20) // Adjust star size
                                 }
                                 ForEach(review.starsGiven..<5, id: \.self) { _ in
                                     Image(systemName: "star.fill")
                                         .foregroundColor(.gray)
+                                        .frame(width: 20) // Adjust star size
                                 }
                             }
-                            .frame(maxWidth: .infinity, alignment: .trailing)
-                            .padding()
+                            .frame(width: 100, alignment: .trailing) // Assign width to stars, keeping them compact
                         }
-                        .padding(2)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .frame(height: 30)
+                        .padding()
+                        .frame(height: 60) // Increased row height
                     }
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
@@ -73,5 +76,5 @@ struct InfoCard: View {
 }
 
 #Preview {
-    InfoCard()
+    LatestReviews()
 }
