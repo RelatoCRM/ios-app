@@ -10,8 +10,8 @@ import SwiftUI
 struct SalesWidget: View {
     var body: some View {
         VStack(alignment: .center, content: {
+            Text("54%").colorInvert().font(.title).fontWeight(.bold)
             Text("Conversion Rate").colorInvert()
-            Text("54%").colorInvert().font(.title2)
         })
             .padding()
             .background(Color("AccentColor"))

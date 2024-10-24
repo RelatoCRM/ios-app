@@ -16,7 +16,6 @@
 		325FEBE22CC6BD2E0003EBF7 /* ManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBE12CC6BD2E0003EBF7 /* ManagementView.swift */; };
 		325FEBE42CC6BD4B0003EBF7 /* InsightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBE32CC6BD4B0003EBF7 /* InsightsView.swift */; };
 		325FEBE62CC6BFFC0003EBF7 /* LeadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBE52CC6BFFC0003EBF7 /* LeadsView.swift */; };
-		325FEBE82CC6C0750003EBF7 /* CommunicationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBE72CC6C0750003EBF7 /* CommunicationsView.swift */; };
 		325FEBEA2CC6C2BC0003EBF7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBE92CC6C2BC0003EBF7 /* HomeView.swift */; };
 		325FEBEC2CC6C88D0003EBF7 /* LatestReviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBEB2CC6C88D0003EBF7 /* LatestReviews.swift */; };
 		325FEBEF2CC713D00003EBF7 /* Communication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBEE2CC713D00003EBF7 /* Communication.swift */; };
@@ -29,6 +28,8 @@
 		325FEBFE2CC90BEE0003EBF7 /* DateRangePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBFD2CC90BEE0003EBF7 /* DateRangePicker.swift */; };
 		325FEC002CC93B050003EBF7 /* SalesWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBFF2CC93B050003EBF7 /* SalesWidget.swift */; };
 		325FEC022CC93B240003EBF7 /* ConversionRateWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEC012CC93B240003EBF7 /* ConversionRateWidget.swift */; };
+		325FEC042CC9CEC80003EBF7 /* FeaturedLeads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEC032CC9CEC80003EBF7 /* FeaturedLeads.swift */; };
+		325FEC0A2CCAA8AB0003EBF7 /* CommunicationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEC092CCAA8AB0003EBF7 /* CommunicationsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +44,6 @@
 		325FEBE12CC6BD2E0003EBF7 /* ManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagementView.swift; sourceTree = "<group>"; };
 		325FEBE32CC6BD4B0003EBF7 /* InsightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsView.swift; sourceTree = "<group>"; };
 		325FEBE52CC6BFFC0003EBF7 /* LeadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadsView.swift; sourceTree = "<group>"; };
-		325FEBE72CC6C0750003EBF7 /* CommunicationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationsView.swift; sourceTree = "<group>"; };
 		325FEBE92CC6C2BC0003EBF7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		325FEBEB2CC6C88D0003EBF7 /* LatestReviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestReviews.swift; sourceTree = "<group>"; };
 		325FEBEE2CC713D00003EBF7 /* Communication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Communication.swift; sourceTree = "<group>"; };
@@ -56,6 +56,8 @@
 		325FEBFD2CC90BEE0003EBF7 /* DateRangePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRangePicker.swift; sourceTree = "<group>"; };
 		325FEBFF2CC93B050003EBF7 /* SalesWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesWidget.swift; sourceTree = "<group>"; };
 		325FEC012CC93B240003EBF7 /* ConversionRateWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionRateWidget.swift; sourceTree = "<group>"; };
+		325FEC032CC9CEC80003EBF7 /* FeaturedLeads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedLeads.swift; sourceTree = "<group>"; };
+		325FEC092CCAA8AB0003EBF7 /* CommunicationsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommunicationsView.swift; path = "../../../../Library/Mobile Documents/.Trash/CommunicationsView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +95,9 @@
 				320CD3C42CC1652B00675D80 /* RelatoApp.swift */,
 				325FEBE92CC6C2BC0003EBF7 /* HomeView.swift */,
 				320CD3C62CC1652B00675D80 /* ContentView.swift */,
+				325FEC092CCAA8AB0003EBF7 /* CommunicationsView.swift */,
 				325FEBF92CC8E3880003EBF7 /* ConfigurationView.swift */,
 				325FEBF52CC8DAD00003EBF7 /* ChartView.swift */,
-				325FEBE72CC6C0750003EBF7 /* CommunicationsView.swift */,
 				325FEBE52CC6BFFC0003EBF7 /* LeadsView.swift */,
 				325FEBE32CC6BD4B0003EBF7 /* InsightsView.swift */,
 				325FEBDF2CC6BCF80003EBF7 /* ReviewsView.swift */,
@@ -135,6 +137,7 @@
 				325FEBFD2CC90BEE0003EBF7 /* DateRangePicker.swift */,
 				325FEBFF2CC93B050003EBF7 /* SalesWidget.swift */,
 				325FEC012CC93B240003EBF7 /* ConversionRateWidget.swift */,
+				325FEC032CC9CEC80003EBF7 /* FeaturedLeads.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -217,13 +220,14 @@
 				325FEBFE2CC90BEE0003EBF7 /* DateRangePicker.swift in Sources */,
 				325FEBFA2CC8E3880003EBF7 /* ConfigurationView.swift in Sources */,
 				325FEBE62CC6BFFC0003EBF7 /* LeadsView.swift in Sources */,
+				325FEC042CC9CEC80003EBF7 /* FeaturedLeads.swift in Sources */,
 				320CD3C72CC1652B00675D80 /* ContentView.swift in Sources */,
 				325FEBE42CC6BD4B0003EBF7 /* InsightsView.swift in Sources */,
 				320CD3C92CC1652B00675D80 /* Item.swift in Sources */,
 				320CD3C52CC1652B00675D80 /* RelatoApp.swift in Sources */,
 				325FEC002CC93B050003EBF7 /* SalesWidget.swift in Sources */,
 				325FEBEF2CC713D00003EBF7 /* Communication.swift in Sources */,
-				325FEBE82CC6C0750003EBF7 /* CommunicationsView.swift in Sources */,
+				325FEC0A2CCAA8AB0003EBF7 /* CommunicationsView.swift in Sources */,
 				325FEBFC2CC8ED0A0003EBF7 /* Review.swift in Sources */,
 				325FEBEC2CC6C88D0003EBF7 /* LatestReviews.swift in Sources */,
 				325FEBF82CC8E0120003EBF7 /* Avatar.swift in Sources */,

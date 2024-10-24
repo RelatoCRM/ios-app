@@ -10,8 +10,8 @@ import SwiftUI
 struct ConversionRateWidget: View {
     var body: some View {
         VStack(alignment: .center, content: {
+            Text("$23.781").colorInvert().font(.title).fontWeight(.bold)
             Text("Sales this month").colorInvert()
-            Text("$23.781").colorInvert().font(.title2)
         })
             .padding()
             .background(Color("AccentColor"))
