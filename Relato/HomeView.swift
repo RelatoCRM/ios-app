@@ -11,7 +11,7 @@ struct HomeView: View {
     var body: some View {
         ScrollView {
             HStack{
-                VStack {
+                VStack(alignment: .leading) {
                     // Welcome message
                     Text("Welcome back!")
                         .font(.headline)
@@ -21,24 +21,19 @@ struct HomeView: View {
                         .font(.title)
                         .fontWeight(.bold)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                    Text("Salesforce")
-                        .font(.headline)
-                        .fontWeight(.bold)
-                        .frame(maxWidth: .infinity, alignment: .leading)
+                    HStack {
+                        Text("4 new notifications")
+                            .font(.headline)
+                            .fontWeight(.bold)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
                 }
-                AvatarView(imageName: "Avatar", borderColor: Color("AccentColor"), size: 57).padding(.bottom, 7)
+                Image("CompanyIcon")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(maxWidth: 70, maxHeight: 70)
             }
             .padding()
-            
-            HStack {
-                // Sales Widget
-                SalesWidget()
-                    .frame(maxWidth: .infinity)
-                
-                // Conversion Rate Widget
-                ConversionRateWidget()
-                    .frame(maxWidth: .infinity)
-            }.padding(.horizontal)
             
             // Chart view
             ChartView()

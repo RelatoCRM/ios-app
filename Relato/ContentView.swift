@@ -21,8 +21,8 @@ struct ContentView: View {
             }
             ReviewsView()
                 .tabItem {
-                    Image(systemName: "star")
-                    Text("Reviews")
+                    Image(systemName: "calendar")
+                    Text("Calendar")
             }
             ManagementView()
                 .tabItem {
@@ -34,13 +34,8 @@ struct ContentView: View {
                     Image(systemName: "tray.and.arrow.up.fill")
                     Text("Mailbox")
                 }
-            ConfigurationView()
-                .tabItem {
-                    Image(systemName: "gear")
-                    Text("Configuration")
-                }
-        }.accentColor(Color("AccentColor"))
-    }
+            }.accentColor(Color("AccentColor"))
+        }
     }
 
 #Preview {

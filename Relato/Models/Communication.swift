@@ -5,14 +5,16 @@ import Foundation
 class Communication: Identifiable {
     @Attribute var id: UUID = UUID()
     @Attribute var subject: String
+    @Attribute var communicationBody: String
     @Attribute var sendingGroup: String
-    @Attribute var category: String
+    @Attribute var campaign: String
     @Attribute var future: Bool
 
-    init(subject: String, sendingGroup: String, category: String, future: Bool) {
+    init(subject: String, communicationBody: String, sendingGroup: String, campaign: String, future: Bool) {
         self.subject = subject
+        self.communicationBody = communicationBody
         self.sendingGroup = sendingGroup
-        self.category = category
+        self.campaign = campaign
         self.future = future
     }
 }
