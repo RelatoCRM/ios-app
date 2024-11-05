@@ -19,7 +19,7 @@ struct ContentView: View {
                     Image(systemName: "house")
                     Text("Home")
             }
-            ReviewsView()
+            CalendarView()
                 .tabItem {
                     Image(systemName: "calendar")
                     Text("Calendar")
