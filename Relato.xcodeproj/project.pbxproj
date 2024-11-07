@@ -13,6 +13,7 @@
 		320CD3CB2CC1652C00675D80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320CD3CA2CC1652C00675D80 /* Assets.xcassets */; };
 		320CD3CF2CC1652C00675D80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320CD3CE2CC1652C00675D80 /* Preview Assets.xcassets */; };
 		3225AABA2CCF7B5E000A2922 /* CalendarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3225AAB92CCF7B5E000A2922 /* CalendarEvent.swift */; };
+		3225AABF2CDCD4DE000A2922 /* CommunicationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3225AABE2CDCD4DE000A2922 /* CommunicationsView.swift */; };
 		325FEBE02CC6BCF80003EBF7 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBDF2CC6BCF80003EBF7 /* CalendarView.swift */; };
 		325FEBE22CC6BD2E0003EBF7 /* ManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBE12CC6BD2E0003EBF7 /* ManagementView.swift */; };
 		325FEBE42CC6BD4B0003EBF7 /* InsightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBE32CC6BD4B0003EBF7 /* InsightsView.swift */; };
@@ -27,7 +28,6 @@
 		325FEBFC2CC8ED0A0003EBF7 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBFB2CC8ED0A0003EBF7 /* Review.swift */; };
 		325FEBFE2CC90BEE0003EBF7 /* DateRangePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEBFD2CC90BEE0003EBF7 /* DateRangePicker.swift */; };
 		325FEC042CC9CEC80003EBF7 /* FeaturedLeads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEC032CC9CEC80003EBF7 /* FeaturedLeads.swift */; };
-		325FEC0A2CCAA8AB0003EBF7 /* CommunicationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FEC092CCAA8AB0003EBF7 /* CommunicationsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +39,7 @@
 		320CD3CC2CC1652C00675D80 /* Relato.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Relato.entitlements; sourceTree = "<group>"; };
 		320CD3CE2CC1652C00675D80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3225AAB92CCF7B5E000A2922 /* CalendarEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEvent.swift; sourceTree = "<group>"; };
+		3225AABE2CDCD4DE000A2922 /* CommunicationsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunicationsView.swift; sourceTree = "<group>"; };
 		325FEBDF2CC6BCF80003EBF7 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		325FEBE12CC6BD2E0003EBF7 /* ManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagementView.swift; sourceTree = "<group>"; };
 		325FEBE32CC6BD4B0003EBF7 /* InsightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsView.swift; sourceTree = "<group>"; };
@@ -53,7 +54,6 @@
 		325FEBFB2CC8ED0A0003EBF7 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		325FEBFD2CC90BEE0003EBF7 /* DateRangePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRangePicker.swift; sourceTree = "<group>"; };
 		325FEC032CC9CEC80003EBF7 /* FeaturedLeads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedLeads.swift; sourceTree = "<group>"; };
-		325FEC092CCAA8AB0003EBF7 /* CommunicationsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommunicationsView.swift; path = "../../../../Library/Mobile Documents/.Trash/CommunicationsView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +91,8 @@
 				320CD3C42CC1652B00675D80 /* RelatoApp.swift */,
 				325FEBE92CC6C2BC0003EBF7 /* HomeView.swift */,
 				320CD3C62CC1652B00675D80 /* ContentView.swift */,
-				325FEC092CCAA8AB0003EBF7 /* CommunicationsView.swift */,
 				325FEBF92CC8E3880003EBF7 /* ConfigurationView.swift */,
+				3225AABE2CDCD4DE000A2922 /* CommunicationsView.swift */,
 				325FEBF52CC8DAD00003EBF7 /* ChartView.swift */,
 				325FEBE32CC6BD4B0003EBF7 /* InsightsView.swift */,
 				325FEBDF2CC6BCF80003EBF7 /* CalendarView.swift */,
@@ -225,9 +225,9 @@
 				320CD3C92CC1652B00675D80 /* Item.swift in Sources */,
 				320CD3C52CC1652B00675D80 /* RelatoApp.swift in Sources */,
 				325FEBEF2CC713D00003EBF7 /* Communication.swift in Sources */,
-				325FEC0A2CCAA8AB0003EBF7 /* CommunicationsView.swift in Sources */,
 				325FEBFC2CC8ED0A0003EBF7 /* Review.swift in Sources */,
 				325FEBEC2CC6C88D0003EBF7 /* LatestReviews.swift in Sources */,
+				3225AABF2CDCD4DE000A2922 /* CommunicationsView.swift in Sources */,
 				325FEBF82CC8E0120003EBF7 /* Avatar.swift in Sources */,
 				325FEBF12CC780840003EBF7 /* Category.swift in Sources */,
 			);
