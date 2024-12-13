@@ -362,11 +362,11 @@ struct NewCommunicationView: View {
                     .alert(isPresented: $showCancelAlert) {
                         Alert(
                             title: Text("Cancel Communication"),
-                            message: Text("Are you sure you want to cancel? All data will be erased."),
-                            primaryButton: .destructive(Text("Cancel")) {
+                            message: Text("Are you sure you want to close the communication? All data will get lost."),
+                            primaryButton: .destructive(Text("Close")) {
                                 dismiss()
                             },
-                            secondaryButton: .cancel()
+                            secondaryButton: .cancel(Text("Cancel"))
                         )
                     }
                 }

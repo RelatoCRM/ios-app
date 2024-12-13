@@ -6,13 +6,12 @@
 //
 
 import SwiftUI
-
-import SwiftUI
-
+      
 struct LatestReviews: View {
     @State var reviews: [Review] = [
-        Review(reviewer: "Diego Herrera", title: "Awful experience", reviewBody: "The whole thing was givin' nothing and it was so undone", starsGiven: 2),
-        Review(reviewer: "Jane Doe", title: "Great experience", reviewBody: "I loved everything about it!", starsGiven: 5)
+        Review(reviewer: "Diego Herrera", title: "La mejor experiencia de mi vida", comment: "Gracias a su asesoramiento tuve lo que necesitaba!", rating: 5),
+        Review(reviewer: "Javier Borbón", title: "Una experiencia casi perfecta", comment: "Nos dieron exactamente lo que anunciaron", rating: 4),
+        Review(reviewer: "Gracie Abrams", title: "Kinda awful", comment: "Had a good time but staff was", rating: 2)
     ]
     
     var body: some View {
@@ -38,7 +37,7 @@ struct LatestReviews: View {
                                 Image(systemName: "quote.bubble.fill")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
-                                    .frame(height: 30) // Match the row height
+                                    .frame(height: 30)
                                     .padding(.horizontal, 15)
                                 
                                 VStack(alignment: .leading) {
@@ -48,25 +47,25 @@ struct LatestReviews: View {
                                         .font(.subheadline)
                                         .foregroundColor(.gray)
                                 }
-                                .frame(maxWidth: .infinity, alignment: .leading) // Take more space for name and title
+                                .frame(maxWidth: .infinity, alignment: .leading)
                             }
                             
-                            HStack(spacing: 2) { // Reduced spacing between stars
-                                ForEach(0..<review.starsGiven, id: \.self) { _ in
+                            HStack(spacing: 2) {
+                                ForEach(0..<review.rating, id: \.self) { _ in
                                     Image(systemName: "star.fill")
                                         .foregroundColor(.yellow)
-                                        .frame(width: 20) // Adjust star size
+                                        .frame(width: 20)
                                 }
-                                ForEach(review.starsGiven..<5, id: \.self) { _ in
+                                ForEach(review.rating..<5, id: \.self) { _ in
                                     Image(systemName: "star.fill")
                                         .foregroundColor(.gray)
-                                        .frame(width: 20) // Adjust star size
+                                        .frame(width: 20)
                                 }
                             }
-                            .frame(width: 100, alignment: .trailing) // Assign width to stars, keeping them compact
+                            .frame(width: 100, alignment: .trailing)
                         }
                         .padding()
-                        .frame(height: 60) // Increased row height
+                        .frame(height: 60)
                     }
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    var body: some View {
+    var body: some View {  
         ScrollView {
             HStack{
                 VStack(alignment: .leading) {
